@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G7a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DViewController" customModule="PrototypeGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9Q-pp-t1p">
+                                <rect key="frame" x="260" y="230" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.16133375059999999" green="0.63010053590000004" blue="0.72591944480000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BhO-gZ-ZRd"/>
+                                    <constraint firstAttribute="width" constant="80" id="Y5c-4i-3xI"/>
+                                </constraints>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elP-vi-pHO">
+                                <rect key="frame" x="160" y="277" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.62745098040000002" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="czh-he-oQd"/>
+                                    <constraint firstAttribute="height" constant="80" id="hBH-eI-MA5"/>
+                                </constraints>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arK-lV-J28">
+                                <rect key="frame" x="360" y="277" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.62745098040000002" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5uY-Lg-JjP"/>
+                                    <constraint firstAttribute="width" constant="80" id="m7p-Dr-hPf"/>
+                                </constraints>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qJ-VI-5y1">
+                                <rect key="frame" x="8" y="447" width="584" height="145"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRAG AND DROP HERE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dde-hf-17h">
+                                        <rect key="frame" x="8" y="54" width="568" height="26"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Dde-hf-17h" firstAttribute="top" secondItem="6qJ-VI-5y1" secondAttribute="top" constant="54" id="lo5-z3-453"/>
+                                    <constraint firstAttribute="height" constant="145" id="lwe-YF-HfD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dde-hf-17h" secondAttribute="trailing" constant="8" id="tv2-0I-64v"/>
+                                    <constraint firstItem="Dde-hf-17h" firstAttribute="leading" secondItem="6qJ-VI-5y1" secondAttribute="leading" constant="8" id="v5O-yB-GRv"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="species_06.png" translatesAutoresizingMaskIntoConstraints="NO" id="g83-eq-eJR" customClass="DraggableView" customModule="PrototypeGesture" customModuleProvider="target">
+                                <rect key="frame" x="93" y="58" width="123" height="135"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6qJ-VI-5y1" secondAttribute="trailing" constant="8" id="4Dc-rt-UaC"/>
+                            <constraint firstItem="D9Q-pp-t1p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cc7-i4-eS5"/>
+                            <constraint firstItem="D9Q-pp-t1p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="KYe-of-Br7"/>
+                            <constraint firstItem="arK-lV-J28" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="17" id="OGX-p1-Ze9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6qJ-VI-5y1" secondAttribute="bottom" constant="8" id="ci9-kY-qiu"/>
+                            <constraint firstItem="elP-vi-pHO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="eTU-BX-g2a"/>
+                            <constraint firstItem="elP-vi-pHO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="17" id="i49-zB-DKw"/>
+                            <constraint firstItem="6qJ-VI-5y1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="nCS-NH-NaW"/>
+                            <constraint firstItem="arK-lV-J28" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="oe7-eT-0LB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="T2" destination="D9Q-pp-t1p" id="G7e-2q-2Gj"/>
+                        <outlet property="T3" destination="arK-lV-J28" id="lew-vJ-ilr"/>
+                        <outlet property="d1" destination="g83-eq-eJR" id="3a5-Wx-t9Y"/>
+                        <outlet property="t1" destination="elP-vi-pHO" id="1eA-fK-OcF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="species_06.png" width="512" height="512"/>
+    </resources>
+</document>
